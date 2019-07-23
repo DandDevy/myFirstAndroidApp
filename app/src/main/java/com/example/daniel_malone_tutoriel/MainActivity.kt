@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2019 of Daniel Ashcroft. Use with permission.
+ */
+
 package com.example.daniel_malone_tutoriel
 
 import android.content.Intent
@@ -22,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         bigButton.setOnClickListener {
             d("my name is daniel", "bigButton has been pressed")
             startActivity(Intent(this, AboutMe::class.java))
+        }
+
+        selectNameButton.setOnClickListener {
+//            String name = namePT.getText()
+//            d()
         }
     }
 
