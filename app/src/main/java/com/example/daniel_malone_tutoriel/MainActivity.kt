@@ -22,15 +22,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-//        added bits
-        bigButton.setOnClickListener {
-            d("my name is daniel", "bigButton has been pressed")
-            startActivity(Intent(this, AboutMe::class.java))
-        }
 
-        selectNameButton.setOnClickListener {
-//            String name = namePT.getText()
-//            d()
+        button.setOnClickListener {
+            d("button", "pressed by ${editText.text}!")
         }
     }
 
