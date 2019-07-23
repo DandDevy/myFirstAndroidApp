@@ -24,7 +24,11 @@ class MainActivity : AppCompatActivity() {
 
 
         button.setOnClickListener {
+            //prints text to the console
             d("button", "pressed by ${editText.text}!")
+
+            //sets helloworld default textView to text
+            helloWorldTV.text="how do you do ${editText.text}?"
         }
     }
 
