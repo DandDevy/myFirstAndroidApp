@@ -28,7 +28,16 @@ class MainActivity : AppCompatActivity() {
             d("button", "pressed by ${editText.text}!")
 
             //sets helloworld default textView to text
-            helloWorldTV.text="how do you do ${editText.text}?"
+            helloWorldTV.text="Today is a ${editText.text} day!"
+
+            val userRes = editText.text.toString();
+            //if the user has entered bad a sad pic shows up
+            if(userRes == "bad"){
+                myImage.setImageResource(R.drawable.sadpic)
+
+            } else if(userRes == "good"){
+                myImage.setImageResource(R.drawable.happypic)
+            }
         }
     }
 
